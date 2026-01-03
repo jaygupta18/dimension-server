@@ -34,8 +34,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(clientDistPath, 'index.html'))
 })
 
-// Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`)
   console.log(`📦 Serving client from: ${clientDistPath}`)
 })
+
